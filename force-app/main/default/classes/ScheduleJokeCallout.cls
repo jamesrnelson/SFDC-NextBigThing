@@ -1,4 +1,4 @@
-public with sharing class ScheduleJokeCallout implements Schedulable {
+global with sharing class ScheduleJokeCallout implements Schedulable {
     global void execute(SchedulableContext sc) {
         // Add your scheduled job logic here
         JokeCallout.makeCallout();

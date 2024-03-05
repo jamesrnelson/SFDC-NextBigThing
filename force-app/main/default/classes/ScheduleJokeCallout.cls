@@ -8,7 +8,7 @@ global with sharing class ScheduleJokeCallout implements Schedulable {
     global static String scheduleJob() {
         // Schedule job to run every day at 2 AM
         // Change the CRON expression as per your requirement
-        String jobId = System.schedule('Joke Scheduled', '0 0 12 * * ?', new ScheduleJokeCallout());
+        String jobId = System.schedule('Joke Scheduled', '0 0 16 * * ?', new ScheduleJokeCallout());
         return jobId;
     }
 }

@@ -3,6 +3,7 @@ public with sharing class JokeCallout {
 
     }
 
+    @future
     public static void makeCallout() {
         try {
             Http http = new Http();
